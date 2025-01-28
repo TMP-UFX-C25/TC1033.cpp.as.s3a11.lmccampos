@@ -29,9 +29,20 @@ Felicidades LUZ LOPEZ CISNEROS por tu cumpleaños No. 20 !
 
 ```mermaid
 classDiagram
-      class Alumno
-      Alumno: -string matricula
-      Alumno: +Alumno()
+class Alumno {
+    +Alumno()
+    +Alumno(std::string, std::string, int, std::string)
+    +std::string getMatricula()
+    +std::string getNombre()
+    +int getEdad()
+    +std::string getCarrera()
+    +void setMatricula(std::string)
+    +void setNombre(std::string)
+    +void setEdad(int)
+    +void setCarrera(std::string)
+    +void imprimeAlumno()
+    +void cumpleAnios()
+}
 ```
 [Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
