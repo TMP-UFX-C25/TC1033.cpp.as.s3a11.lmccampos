@@ -27,24 +27,27 @@ Felicidades LUZ LOPEZ CISNEROS por tu cumpleaños No. 20 !
 
 ## Diagrama de Clases
 
-```mermaid
 classDiagram
-class Alumno {
-    +Alumno()
-    +Alumno(std::string, std::string, int, std::string)
-    +std::string getMatricula()
-    +std::string getNombre()
-    +int getEdad()
-    +std::string getCarrera()
-    +void setMatricula(std::string)
-    +void setNombre(std::string)
-    +void setEdad(int)
-    +void setCarrera(std::string)
-    +void imprimeAlumno()
-    +void cumpleAnios()
-}
-```
-[Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
+    class Alumno {
+        -string matricula
+        -string nombre
+        -int edad
+        -string carrera
+        +Alumno()
+        +Alumno(string matricula, string nombre, int edad, string carrera)
+        +string getMatricula()
+        +string getNombre()
+        +int getEdad()
+        +string getCarrera()
+        +void setMatricula(string matricula)
+        +void setNombre(string nombre)
+        +void setEdad(int edad)
+        +void setCarrera(string carrera)
+        +void imprimeAlumno()
+        +void cumpleAnios()
+    }
+    
+    [Diagramas de clase en el lenguaje Mermaid](https://mermaid.js.org/syntax/classDiagram.html)
 
 ## Prompt para generar el Diagrama de Clases con IA - mermAID
 ```
